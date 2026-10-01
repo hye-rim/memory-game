@@ -413,7 +413,9 @@ updateHud();
 fit();
 requestAnimationFrame(frame);
 
+/* @test-hooks:start */
 // 테스트용
 window.__mem = { get cards() { return cards; }, get state() { return state; }, get phase() { return phase; }, get round() { return round; },
   get score() { return score; }, get time() { return time; }, get open() { return open; }, tapCard, update, draw, startGame, W, H };
+/* @test-hooks:end */
 })();
